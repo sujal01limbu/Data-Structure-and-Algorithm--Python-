@@ -1,21 +1,17 @@
-
-
-# importing "array" for array operations
 import array
-  
-# initializing array with array values and signed integers
-arr = array.array('i', [1, 2, 3]) 
- 
-# printing original array
-print ("The new created array is : ",end=" ")
-for i in range (0, 3):
-    print (arr[i], end=" ")
-print("\r")
- 
-# using append() to insert new value at end
-arr.append(4);
- 
-# printing appended array
-print("The appended array is : ", end="")
-for i in range (len(arr)):
-    print (arr[i], end=" ")
+
+# Create an array of integers
+number_array = array.array("i", [1, 2, 3])
+
+# Print the initial array
+print("Original Array:")
+for i in range(len(number_array)):
+    print(number_array[i])
+
+# Append a new element (4) to the array
+number_array.append(4)
+
+# Print the modified array
+print("\nModified Array:")
+for i in range(len(number_array)):
+    print(number_array[i])
